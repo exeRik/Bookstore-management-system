@@ -27,5 +27,5 @@
       <a href="orders.php">Orders</a>
     </div>
   </div>
-  <p>&copy; 2025 <span>BookSathi | All Rights Reserved.</span></p>
+  <p>&copy; 2025 <span>Bookiee | All Rights Reserved.</span></p>
 </section>
