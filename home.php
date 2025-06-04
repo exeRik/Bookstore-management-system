@@ -51,7 +51,7 @@ if (isset($_POST['add_to_cart'])) {
     <div class="main_descrip">
       <h1>The Bookshelf</h1>
       <p>Explore, Discover, and Buy Your Favorite Books</p>
-      <button>Discover More</button>
+      <button><a href="shop.php" style="text-decoration: none; color:black;">Discover More</a></button>
     </div>
   </section>
 
@@ -81,7 +81,7 @@ if (isset($_POST['add_to_cart'])) {
       <?php
         }
       } else {
-        echo '<p class="empty">No Products Added Yet !</p>';
+        echo '<p class="empty">No products added yet!!</p>';
       }
       ?>
     </div>
