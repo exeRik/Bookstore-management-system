@@ -3,7 +3,7 @@
     <div class="footer_box">
       <div class="footer_logo_cont">
         <img src="book_logo.png" alt="">
-        <a href="home.php" class="book_logo">BookSathi</a>
+        <a href="home.php" class="book_logo">Bookiee</a>
       </div>
       <p><i class="fas fa-phone"></i> +977-9812345678</p>
       <p><i class="fas fa-envelope"></i> contact@booksathi.com</p>
