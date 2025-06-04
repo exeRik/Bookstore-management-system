@@ -2,7 +2,8 @@
 
 **Bookiee** is a dynamic Bookstore Management System built using PHP and MySQL. It allows users to explore and purchase books, while providing an admin panel for managing book inventory with full CRUD (Create, Read, Update, Delete) operations.
 
-![Bookiee Screenshot](screenshot.png)
+![Alt text](screenshots/image.png)
+
 
 ---
 
