@@ -16,7 +16,7 @@ if(isset($message)){
       <div class="logo_cont">
         <img src="book_logo.png" alt="">
 
-        <a href="home.php" class="book_logo">Bookiee</a>
+        <a href="home.php" class="book_logo">BookSathi</a>
       </div>
 
 
