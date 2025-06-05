@@ -1,6 +1,6 @@
-# 📚 Bookiee - Bookstore Management System (PHP)
+# 📚 BookSathi - Bookstore Management System (PHP)
 
-**Bookiee** is a dynamic Bookstore Management System built using PHP and MySQL. It allows users to explore and purchase books, while providing an admin panel for managing book inventory with full CRUD (Create, Read, Update, Delete) operations.
+**BookSathi** is a dynamic Bookstore Management System built using PHP and MySQL. It allows users to explore and purchase books, while providing an admin panel for managing book inventory with full CRUD (Create, Read, Update, Delete) operations.
 
 ![Alt text](screenshots/image.png)
 
