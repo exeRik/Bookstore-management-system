@@ -67,7 +67,7 @@ if (isset($_GET['delete_all'])) {
   <div class="cart_box_cont">
     <?php
     $grand_total = 0;
-    $stmt = $conn->prepare("SELECT * FROM `cart` WHERE user_id=?");
+    $stmt = $conn->prepare("SELECT id, name, price, quantity, image FROM `cart` WHERE user_id=?");
     $stmt->bind_param("i", $user_id);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -107,14 +107,15 @@ if (isset($_GET['delete_all'])) {
   <div class="cart_total">
     <h2>Total Cart Price: <span>Rs. <?php echo number_format($grand_total); ?>/-</span></h2>
     <div class="btns_cart">
-      <a href="cart.php?delete_all" 
+      <a href="<?php echo ($grand_total > 0) ? 'cart.php?delete_all' : '#'; ?>" 
          class="product_btn <?php echo ($grand_total > 0) ? '' : 'disabled'; ?>" 
-         onclick="return confirm('Are you sure you want to delete all cart items?');">
+         <?php echo ($grand_total > 0) ? 'onclick="return confirm(\'Are you sure you want to delete all cart items?\');"' : 'onclick="return false;"'; ?>>
          Delete All
       </a>
       <a href="shop.php" class="product_btn">Continue Shopping</a>
-      <a href="checkout.php" 
-         class="product_btn <?php echo ($grand_total > 0) ? '' : 'disabled'; ?>">
+      <a href="<?php echo ($grand_total > 0) ? 'checkout.php' : '#'; ?>" 
+         class="product_btn <?php echo ($grand_total > 0) ? '' : 'disabled'; ?>" 
+         <?php echo ($grand_total > 0) ? '' : 'onclick="return false;"'; ?>>
          Checkout
       </a>
     </div>
